@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expressions</title>
+</head>
+
+<body>
+
+    <script>
+        // Q1 Addition
+        var num1 = parseInt(prompt("Enter first number"));
+        var num2 = parseInt(prompt("Enter second number"));
+        document.write("Sum of " + num1 + " and " + num2 + " is " + (num1 + num2) + "<br>");
+
+        // Q2 Substraction
+        document.write("Subtraction of " + num1 + " and " + num2 + " is " + (num1 - num2) + "<br>");
+
+        // Multiplication
+        document.write("Multiplication of " + num1 + " and " + num2 + " is " + (num1 * num2) + "<br>");
+
+        // Division 
+        document.write("Division of " + num1 + " and " + num2 + " is " + (num1 / num2) + "<br>");
+
+        // Modulus 
+
+        document.write("Mod of " + num1 + " and " + num2 + " is " + (num1 % num2) + "<br>");
+
+
+        // Q3
+        document.write("<h1>Q3</h1> <br>");
+
+
+        var x;
+        document.write("Value after variable declaration is:" + x + "<br>");
+        x = 20;
+        document.write("Initial Value " + x + "<br>");
+        ++x;
+        document.write("Value after Increament is " + x + "<br>");
+        x = x + 7;
+        document.write("Value after Addition is " + x + "<br>");
+        --x;
+        document.write("Value after Decreament is " + x + "<br>");
+        x = x % 3;
+        document.write("The remainder is " + x + "<br>");
+
+        // Q4
+        document.write("<h1>Q4</h1> <br>");
+
+        var ticketPrice = 600;
+        var totalTickets = 5;
+        var cal = ticketPrice * totalTickets;
+
+        document.write("Total cost to buy " + totalTickets + " Tickets to a movie is " + cal + " PKR" + "<br>")
+
+        // Q5
+        document.write("<h1>Q5</h1> <br>");
+        document.write("<h3>Table of 12</h3> <br>");
+
+        for (var i = 1; i <= 10; i++) {
+            document.write("12 X " + i + " = " + 12 * i + "<br>");
+        }
+    </script>
+</body>
+
+</html>
