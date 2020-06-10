@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Exp 2</title>
+</head>
+
+<body>
+    <script>
+        //Q1
+        var x = 8;
+        document.write("The value of x is: " + x + "<br><br>");
+        document.write("************************************************************ " + "<br><br>");
+
+
+
+        document.write("The value of ++x is: " + ++x + "<br>");
+        document.write("Now the value of x is: " + x + "<br><br>");
+
+
+
+        document.write("The value of x++ is: " + x++ + "<br>");
+        document.write("Now the value of x is: " + x + "<br><br>");
+
+        document.write("The value of --x is: " + --x + "<br>");
+        document.write("Now the value of x is: " + x + "<br><br>");
+
+        document.write("The value of x-- is: " + x-- + "<br>");
+        document.write("Now the value of x is: " + x + "<br><br>");
+
+        // Q2
+
+        var a = 2,
+            b = 1;
+        var result = --a - --b + ++b + b--;
+        // 1 - 0 + 2 + 0
+        // Explain the output at each stage:
+        // --a; 1
+        // --a - --b; 1 -0 = 1
+        // --a - --b + ++b; 1 + 2 = 3 
+        // --a - --b + ++b + b--; 3 + 0 = 3
+        document.write("a : " + a + "<br>");
+        document.write("b : " + b + "<br>");
+        document.write("result : " + result + "<br><br>");
+
+        // Q3
+
+        var username = prompt("Enter Your Name");
+        alert("Hello " + username + "\r\n" + " Have a Good Day");
+
+        // Q5
+
+        var table = prompt("Enter a Number of a Table", "5");
+
+        for (var i = 1; i <= 10; i++) {
+            document.write(table + " X " + i + "= " + table * i + "<br>");
+        }
+
+        // Q6 
+
+        var course1 = prompt("Enter the name of Course-1");
+        var course2 = prompt("Enter the name of Course-2");
+        var course3 = prompt("Enter the name of Course-3");
+
+        var course1Marks = parseInt(prompt("Enter the Marks of: " + course1));
+        var course2Marks = parseInt(prompt("Enter the Marks of: " + course2));
+        var course3Marks = parseInt(prompt("Enter the Marks of: " + course3));
+        var totalMarks = 300;
+        var obtainedMarks = course1Marks + course2Marks + course3Marks;
+        var per = (obtainedMarks / totalMarks) * 100;
+
+        alert("Total Marks: " + totalMarks + "\r\n" +
+            "Obtained Marks: " + obtainedMarks + "\r\n" +
+            "Percentage: " + per);
+    </script>
+</body>
+
+</html>
