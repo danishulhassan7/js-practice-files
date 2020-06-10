@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condtional-2</title>
+</head>
+
+<body>
+    <script>
+        // Q7
+        document.write("<h1>Guessing Game</h1>");
+
+        var guess = 4;
+        var user_no = parseInt(prompt("Guess the number between 1-10 "));
+
+        if (user_no === guess) {
+            alert("Bingo! Correct answer ");
+        } else if (user_no === 3 || user_no === 5) {
+            alert("Too Close");
+        } else {
+            alert("Wrong Guess");
+        }
+
+        // Q8 
+
+        var checkDiv = parseInt(prompt("Enter a Number to check whether the no is divisble by 3 or not"));
+
+        if (checkDiv % 3 == 0) {
+            alert("divisible by 3");
+        } else {
+            alert("divisible not by 3");
+        }
+
+        // Q9
+
+        var checkEvenOdd = parseInt(prompt("Enter a Number to check whether the no is Even or Odd"));
+
+        if ((checkEvenOdd % 2) == 0) {
+            alert("Even No");
+        } else {
+            alert("Odd No")
+        }
+
+        // Q10
+        // a.T > 40 then“ It is too hot outside.”
+        // b.T > 30 then“ The Weather today is Normal.”
+        // c.T > 20 then“ Today’ s Weather is cool.”
+        // d.T > 10 then“ OMG!Today’ s weather is so Cool.
+
+        var temp = parseInt(prompt("Enter the temperature"));
+
+        if (temp > 40) {
+            alert("It is too hot outside.");
+        } else if (temp > 30) {
+            alert("The Weather today is Normal.");
+        } else if (temp > 20) {
+            alert("Today’ s Weather is cool.");
+        } else if (temp > 10) {
+            alert("OMG!Today’ s weather is so Cool.");
+        } else {
+            alert("Please enter valid Temperature");
+        }
+
+        // Q11 
+
+        var operand1 = parseInt(prompt("Enter the first operand"));
+        var operation = (prompt("Enter the operation"));
+        var operand2 = parseInt(prompt("Enter the second operand"));
+
+        if (operation == "+") {
+            alert("The Sum of " + operand1 + " and " + operand2 + "is : " + (operand1 + operand2));
+        } else if (operation == "-") {
+            alert("The Subtraction of " + operand1 + " and " + operand2 + "is : " + (operand1 - operand2));
+        } else if (operation == "*") {
+            alert("The Product of " + operand1 + " and " + operand2 + "is : " + (operand1 * operand2));
+        } else if (operation == "/") {
+            alert("The Division of " + operand1 + " and " + operand2 + "is : " + (operand1 / operand2));
+        } else if (operation == "%") {
+            alert("The Mod of " + operand1 + " and " + operand2 + "is : " + (operand1 % operand2));
+        } else {
+            alert("Plz select the valid operations: +,-,*,/,%");
+        }
+    </script>
+</body>
+
+</html>

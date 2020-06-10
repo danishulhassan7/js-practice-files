@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+    <script>
+        // var city = prompt("Enter Your City");
+        // var firstChar = city.slice(0, 1);
+        // var firstChar = firstChar.toUpperCase();
+        // var otherChar = city.slice(1);
+        // var otherChar = otherChar.toLowerCase();
+        // var city = firstChar + otherChar;
+
+        // var cities = ["Karachi", "Islamabad", "Lahore"];
+
+        // for (var i = 0; i < cities.length; i++) {
+        //     if (city === cities[i] && cities[i] === "Karachi") {
+        //         alert("Welcome To City of Lights");
+        //         break;
+        //     } else if (city === cities[i] && cities[i] === "Islamabad") {
+        //         alert("Welcome to the Capital Land");
+        //         break;
+        //     } else if (cities[i] === city && cities[i] === "Lahore") {
+        //         alert("Welcome to the Heart of Pak");
+        //         break;
+        //     } else {
+        //         alert("City not Found");
+        //         break;
+        //     }
+        // }
+
+        // Q1
+
+        var city = prompt("Enter Your City");
+
+        if (city == "Karachi" || city == "karachi" || city == "KARACHI") {
+            alert("Welcome to the city of lights");
+        } else {
+            alert("Welcome to " + city);
+        }
+
+        // Q2
+
+        var gender = prompt("Enter Your Gender");
+
+        if (gender == "male" || gender == "Male") {
+            alert("Good Morning Sir");
+        } else if (gender == "female" || gender == "Female") {
+            alert("Good Morning Ma'am");
+        } else {
+            alert("Plz enter your Gender");
+        }
+
+        // Q3
+
+        var color = prompt("Enter color of signal");
+
+        if (color == "red" || color == "Red") {
+            alert("Must Stop!");
+        } else if (color == "green" || color == "Green") {
+            alert("Move Now");
+        } else if (color == "yellow" || color == "Yellow") {
+            alert("Ready to Move");
+        } else {
+            alert("Plz enter the color");
+        }
+
+        // Q4 
+
+        var fuel = parseInt(prompt("Enter the remaining Fuel(in Liters)"));
+
+        if (fuel > 0.3) {
+            alert("Ready to Go");
+        } else {
+            alert("Please refill the fuel in your car");
+        }
+
+        // Q5 
+
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+        var b = 82;
+        if (b++ === 82) {
+            alert("given condition for variable b is true");
+        }
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        }
+        if (c === 13) {
+            alert("condition 2 is true");
+        }
+        if (++c < 14) {
+            alert("condition 3 is true");
+        }
+        if (c === 14) {
+            alert("condition 4 is true");
+        }
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+        if (true) {
+            alert("True");
+        }
+        if (false) {
+            alert("False");
+        }
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        }
+
+        // Q6
+        document.write("<h1>MARK SHEET</h1>")
+
+        var totalMarks = parseInt(prompt("Enter the Total Marks"));
+        var obtainedMarks = parseInt(prompt("Enter the obtained Marks"));
+
+        document.write("Total Marks: " + totalMarks + "<br>");
+        document.write("Total Marks: " + obtainedMarks + "<br>");
+
+        var percentage = (obtainedMarks / totalMarks) * 100;
+        document.write("Percantage: " + percentage + "<br>");
+
+        if (percentage >= 80 && percentage <= 100) {
+            document.write("Grade: A+");
+        } else if (percentage < 80 && percentage >= 70) {
+            document.write("Grade: A");
+        } else if (percentage < 70 && percentage >= 60) {
+            document.write("Grade: B");
+        } else if (percentage < 60 && percentage >= 50) {
+            document.write("Grade: C");
+        } else {
+            document.write("Grade: Failed");
+        }
+    </script>
+</body>
+
+</html>
