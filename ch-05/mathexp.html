@@ -62,6 +62,111 @@
         for (var i = 1; i <= 10; i++) {
             document.write("12 X " + i + " = " + 12 * i + "<br>");
         }
+
+        // Q6
+        document.write("<h1>Q6</h1> <br>");
+
+        var tempCelsius = 37;
+        var tempFarhenheit = 65;
+
+        var farhenheitFormula = "(F -32 ) * 5/9";
+        var celsiusFormula = "(C * 9 / 5) + 32";
+
+        var celsisuToFarhenheit = (tempCelsius * 9 / 5) + 32;
+        var farhenheitToCelsius = (tempFarhenheit - 32) * 5 / 9;
+
+        document.write(tempCelsius + " C " + "is " + celsisuToFarhenheit + "F" + "<br>");
+        document.write(tempFarhenheit + " F " + "is " + farhenheitToCelsius + "C" + "<br>");
+
+        // Q7
+        document.write("<h1>Q7 Shopping Cart</h1> <br>");
+        var priceItem1 = 760;
+        var priceItem2 = 1300;
+
+        var quantityItem1 = 2;
+        var quantityItem2 = 5;
+        var shippingCharges = 200;
+
+        var totalBillItem1 = priceItem1 * quantityItem1;
+        var totalBillItem2 = priceItem2 * quantityItem2;
+        var totalBill = totalBillItem1 + totalBillItem2 + shippingCharges;
+
+        document.write("The Price of Item 1 is: " + priceItem1 + "<br>");
+        document.write("The Quantity of Item 1 is: " + quantityItem1 + "<br>");
+        document.write("The Price of Item 2 is: " + priceItem2 + "<br>");
+        document.write("The Quantity of Item 2 is: " + quantityItem2 + "<br>");
+        document.write("Shpping Charges: " + shippingCharges + "<br> <br>");
+        document.write("Total Cost of your order  is: " + "<b>" + totalBill + "</b>" + "<br>");
+
+        // Q8
+        document.write("<h1>Q8  :MARKSHEET</h1> <br>");
+
+        var totalMarks = 550;
+        var obtainedMarks = 411;
+        var percentage = obtainedMarks / totalMarks * 100;
+
+        document.write("Total Marks: " + "<b>" + totalMarks + "</b>" + "<br>");
+        document.write("Obtained Marks: " + "<b>" + obtainedMarks + "</b>" + "<br>");
+        document.write("Percentage: " + "<b>" + percentage + "</b>" + "<br>");
+
+        // Q9
+        document.write("<h1>Q9 : Currency Converter </h1>");
+
+        var oneDollar = 165;
+        var oneRiyal = 37;
+        var NoDollars = 10;
+        var NoRiyals = 25;
+
+        var totalRiyals = oneRiyal * NoRiyals;
+        var totalDollars = oneDollar * NoDollars;
+
+        var totalAmount = totalRiyals + totalDollars;
+
+        document.write("The Total Amount in PKR is: " + "<b>" + totalAmount + "</b>" + "<br>");
+
+        // Q10
+        document.write("<h1>Q10 :</h1>");
+        var a = 10;
+        var exp = (((a + 5) * 10) / 2);
+        document.write("Result of (((x + 5) * 10) / 2) is : " + exp + "<br>");
+
+        // Q11
+        document.write("<h1>Q11 Age Calculator:</h1>");
+
+        var currentYear = 2020;
+        var dobYear = 1999;
+        var calAge = currentYear - dobYear;
+
+        document.write("Current Year is: " + currentYear + "<br>");
+        document.write("Birth Year is: " + dobYear + "<br>");
+        document.write("Your Age is: " + calAge + "<br>");
+
+        // Q12
+        document.write("<h1>Q12:  The Geometrizer</h1>");
+
+        var radius = 40;
+        var circumference = 2 * 3.142 * radius;
+        var area = (3.142) * ((radius) ** 2);
+
+        document.write("The Radius is: " + radius + "<br>");
+        document.write("The Circumference  is: " + circumference + "<br>");
+        document.write("The Area  is: " + area + "<br>");
+
+        // Q13
+        document.write("<h1>Q13:  The LifeTime Supply Calculator</h1>");
+
+        var fav = "Tea";
+        var myAge = 21;
+        var maxAge = 51;
+        var cupsAmount = 3;
+
+        var totalSupply = (cupsAmount * 365) * (maxAge - myAge);
+
+        document.write("Favourite Food/Drink is: " + fav + "<br>");
+        document.write("Current Age is: " + myAge + "<br>");
+        document.write("Maximum Age is: " + maxAge + "<br>");
+        document.write("Amount of Cups is: " + cupsAmount + "<br>");
+        document.write("You will need " + totalSupply + " cups to last you until the ripe old age of " + maxAge + "<br>");
     </script>
 </body>
 
