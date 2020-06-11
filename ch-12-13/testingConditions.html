@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions-2</title>
+</head>
+
+<body>
+    <script>
+        // Q1 
+
+        // var letter = prompt("Enter any character");
+
+        // if (letter >= 65 && letter <= 90) {
+        //     alert("Character " + letter + " is a capital letter");
+        // } else if (letter >= 97 && letter <= 122) {
+        //     alert("Character " + letter + "  is a small letter");
+        // } else if (letter >= 48 && letter <= 57) {
+        //     alert("Character " + letter + "  is a digit");
+        // } else if ((letter > 0 && letter <= 47) || (letter >= 58 && letter <= 64) ||
+        //     (letter >= 91 && letter <= 96) || (letter >= 123 && letter <= 127)) {
+        //     alert("Character " + letter + "  is a special symbol");
+        // } else {
+        //     alert("Please Enter Something");
+        // }
+        // } This is not working for some reason
+
+        // Q2 
+
+        var num1 = parseInt(prompt("Enter first number"));
+        var num2 = parseInt(prompt("Enter second number"));
+
+        if (num1 > num2) {
+            alert(num1 + " is larger");
+        } else if (num1 == num2) {
+            alert('Both are Equal');
+        } else if (num2 > num1) {
+            alert(num2 + " is larger")
+        } else {
+            alert("please enter a number");
+        }
+
+        // Q3
+
+        var num = parseInt(prompt("Enter a number"));
+
+        if (num > 0) {
+            alert(num + " is Positive Number");
+        } else if (num == 0) {
+            alert('It is Zero');
+        } else if (num < 0) {
+            alert(num + " is Negative Number")
+        } else {
+            alert("please enter a number");
+        }
+
+        // Q4
+
+
+        var char = prompt("Enter a character to check it is Vowel or not");
+
+        if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+            alert("It is a Vowel");
+
+        } else {
+            alert("It is not a Vowel");
+
+        }
+        // Q5
+
+        var password = "dani123";
+
+        var userpass = prompt("Enter Your Passoword");
+
+        if (userpass === password) {
+            alert("Correct");
+        } else if (userpass != password) {
+            alert("Incorrect");
+        } else {
+            alert("Please enter your password");
+        }
+
+        // Q6 error-solving
+
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        // Q7
+
+        var time = parseInt(prompt("Enter the Time (format 19 = 7pm)"));
+
+        if (time >= 4 && time < 12) {
+            alert("Good Morning");
+        } else if (time >= 12 && time < 17) {
+            alert("Good Afternoon");
+        } else if (time >= 17 && time < 22) {
+            alert("Good Evening");
+        } else if (time >= 22) {
+            alert("Good Night");
+        } else {
+            alert("Please Enter time");
+        }
+    </script>
+</body>
+
+</html>
