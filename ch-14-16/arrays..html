@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        //     1. Declare an empty array using JS literal notation to store
+        // student names in future.
+
+        var arr1 = [];
+
+        arr1[0] = 'hello';
+        arr1[1] = "by";
+        console.log(arr1);
+
+        // 2. Declare an empty array using JS object notation to store
+        // student names in future.
+
+        var arr2 = new Array;
+
+        arr2[0] = 'stu1';
+        arr2[1] = "stu2";
+        console.log(arr2);
+
+        // 3. Declare and initialize a strings array.
+        // 4. Declare and initialize a numbers array.
+        // 5. Declare and initialize a boolean array.
+        // 6. Declare and initialize a mixed array.
+
+        var arr3 = ["Steve", "Virat", "Baber", "Root", "William"];
+        document.write("<h3>Array of Strings</h3>");
+        for (var i = 0; i < arr3.length; i++) {
+            document.write(arr3[i] + "<br>");
+        }
+
+        var arr4 = [35, 65, 76, 98.65, -09];
+        document.write("<h3>Array of Numbers</h3>");
+        for (var i = 0; i < arr4.length; i++) {
+            document.write(arr4[i] + "<br>");
+        }
+
+        var arr5 = [true, false];
+        document.write("<h3>Array of Booleans</h3>");
+        for (var i = 0; i < arr5.length; i++) {
+            document.write(arr5[i] + "<br>");
+        }
+
+        var arr6 = [35, 65, "Steiore", false, "76"];
+        document.write("<h3>Mixed Arrays</h3>");
+        for (var i = 0; i < arr6.length; i++) {
+            document.write(arr6[i] + "<br>");
+        }
+
+        // Q7
+
+        var arr7 = ['SSC', 'HSC', 'BCS',
+            'BS', 'BCOM', 'MS', 'M.Phil', 'PhD'
+        ];
+        document.write("<h3>Education qualifications in Pakistan</h3>");
+        for (var i = 0; i < arr7.length; i++) {
+            document.write(i + 1 + ") " + arr7[i] + "<br>");
+        }
+
+        // // Q8 not working
+
+        // var students = ["William", "Brendon", "Latham"];
+        // var score = [432, 456, , 321];
+        // var percentage = [56, 67, 65];
+
+        // for (var i = 0; i < students.length; i++) {
+        //     for (var j = 0; j < score.length; j++) {
+        //         document.write("Score of " + students[i] + " is " + score[j] + ". Percentage :" + percentage + "<br>");
+        //     }
+        // }
+
+
+        // Q10
+        var numbers = [32, 65, 78, 99, 12, 5, 76, 45];
+        document.write("Numbers: " + numbers + "<br>");
+        numbers.sort(function(a, b) {
+            return a - b
+        });
+        document.write("Sorted Numbers: " + numbers + "<br><br><br>");
+
+        // Q11
+
+        var cities = ["Karachi", "Islamabad", "Hyderabad", "Faislabad", "Sialkot", "Quetta", "Nazimabad", "Peshawar", "Swat", "Murree"];
+        document.write("Cities: " + cities + "<br>");
+
+        var selectedCities1 = cities.slice(1, 4);
+        var selectedCities2 = cities.slice(6, 7);
+        var selectedCities = selectedCities1 + selectedCities2;
+        document.write("Selected Cities: " + selectedCities + "<br><br><br>");
+
+        // Q12
+
+        var arr = ["This ", " is ", " my ", " cat"];
+        document.write("Array: " + arr + "<br>");
+        var arrJoin = arr.join(" ");
+        document.write("String: " + arrJoin + "<br>");
+    </script>
+</body>
+
+</html>
