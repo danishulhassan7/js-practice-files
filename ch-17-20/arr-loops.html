@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & loops</title>
+</head>
+
+<body>
+    <script>
+        var multiArrays = [
+            [1, 2, 4, 9],
+            [4, 5, 6, 8],
+            [2, 1, 0, 2],
+            [9, 9, 1, 6]
+        ];
+        for (var i = 0; i < multiArrays[0].length; i++) {
+            document.write(multiArrays[0][i] + " ");
+        }
+        document.write("<br>");
+        for (var i = 0; i < multiArrays[1].length; i++) {
+            document.write(multiArrays[1][i] + " ");
+        }
+        document.write("<br>");
+        for (var i = 0; i < multiArrays[2].length; i++) {
+            document.write(multiArrays[2][i] + " ");
+        }
+        document.write("<br>");
+        for (var i = 0; i < multiArrays[3].length; i++) {
+            document.write(multiArrays[3][i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // Q3
+
+        for (var i = 1; i <= 10; i++) {
+            document.write(i + "<br>");
+        }
+        document.write("<br><br>");
+
+
+
+        // Q4
+        // var table = parseInt(prompt("Enter the table you want to print"));
+        // var tableLength = parseInt(prompt("Enter the length of table"));
+        // for (var i = 1; i <= 10; i++) {
+        //     document.write(table + " " + "x " + i + "= " + table * i + "<br>");
+        // }
+
+
+
+        // Q5
+
+        var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+        for (var i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");
+        }
+        document.write("<br><br>");
+
+        for (var i = 0; i < fruits.length; i++) {
+            document.write("Element at Index " + i + " is " + fruits[i] + "<br>");
+        }
+        document.write("<br><br>");
+
+        // Q6
+        document.write("<h3>Counting</h3>");
+        for (var i = 0; i <= 15; i++) {
+            document.write(i + ",");
+        }
+        document.write("<br>");
+
+        document.write("<h3>Reverse Counting</h3>");
+        for (var i = 10; i >= 0; i--) {
+            document.write(i + ",");
+        }
+        document.write("<br>");
+
+        document.write("<h3>Even No.</h3>");
+        for (var i = 0; i <= 20;) {
+            document.write(i + ",");
+            i = i + 2;
+        }
+        document.write("<br>");
+
+        document.write("<h3>Odd No.</h3>");
+        for (var i = 1; i <= 20;) {
+            document.write(i + ",");
+            i = i + 2;
+        }
+        document.write("<br>");
+
+        document.write("<h3>Series.</h3>");
+        for (var i = 2; i <= 20;) {
+            document.write(i + "k ,");
+            i = i + 2;
+        }
+        document.write("<br>");
+
+        // Q7
+
+        var items = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+        var reqItem = prompt("Welcome to Paradise Bakery!, What do you want to order?")
+        if (items[0] == reqItem || items[1] == reqItem || items[2] == reqItem || items[3] == reqItem || items[4] == reqItem) {
+            alert(reqItem + " is available");
+        } else {
+            alert("We are Sorry! " + reqItem + " is not available at our Bakery");
+        }
+
+        // Q8
+        document.write("<h2>Max No</h2>")
+        var findMax = [24, 53, 78, 91, 12];
+        var max = findMax.reduce(function(a, b) {
+            return Math.max(a, b);
+        });
+        document.write("Array Items are: " + findMax + "<br>");
+        document.write("Max: " + max + "<br>");
+
+        // Q9
+        document.write("<h2>Smallest No</h2>");
+        var findMin = [24, 53, 78, 91, 12];
+        var min = findMax.reduce(function(a, b) {
+            return Math.min(a, b);
+        });
+        document.write("Array Items are: " + findMin + "<br>");
+        document.write("Smallest: " + min + "<br>");
+
+        // Q10 
+        document.write("<h2>Multiply of 5</h2>");
+        for (var i = 5; i <= 100;) {
+            document.write(i, ",");
+            i = i + 5;
+        }
+    </script>
+</body>
+
+</html>
