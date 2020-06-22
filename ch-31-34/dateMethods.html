@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date | JS</title>
+</head>
+
+<body>
+    <script>
+        // Q1
+        var date = new Date();
+        document.write("<h1>" + date + "<h1>" + "<br>");
+
+        // var today = date.getDate();
+        // document.write("<h1>" + today + "<h1>" + "<br>");
+
+        // var month = date.getMonth();
+        // document.write("<h1>" + month + "<h1>" + "<br>");
+
+        // var year = date.getFullYear();
+        // document.write("<h1>" + year + "<h1>" + "<br>");
+
+        // var time = date.getTime();
+        // document.write("<h1>" + time + "<h1>" + "<br>");
+
+        // var day = date.getDay();
+        // document.write("<h1>" + day + "<h1>" + "<br>");
+
+
+        // Q2
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write("Month: " + months[date.getMonth()] + "<br>");
+
+        // Q3
+
+        var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        document.write("Day is: " + days[date.getDay()] + "<br>");
+
+        // Q4
+        var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        if (days[date.getDay()] === "Sun" || days[date.getDay()] === "Sat") {
+            document.write("It's a Fun Day " + "<br>");
+        } else {
+            document.write("Day is: " + days[date.getDay()] + "<br>");
+        }
+
+        // Q5
+        var dayss = 0;
+        if (dayss[date.getDay()] < 16) {
+            document.write("First 15 Days of the Month" + "<br>");
+        } else {
+            document.write("Last 15 days of the month" + "<br>");
+        }
+
+        // Q6
+
+        document.write("Milliseconds: " + date.getTime() + "<br>");
+        document.write("Minutes: " + date.getTime() / 1000 / 60 + "<br>");
+
+        // Q7 pending
+
+        // var ampm = 0;
+        // if (ampm[date.getHours()] > 12) {
+        //     document.write("It's P.M");
+        // } else {
+        //     document.write("It's A.M");
+        // }
+
+        // Q8
+
+        
+    </script>
+</body>
+
+</html>
