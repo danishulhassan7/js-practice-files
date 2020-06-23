@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions | Js</title>
+</head>
+
+<body>
+    <script>
+        // Q1
+
+        // function currentDate() {
+        //     var currentDate = new Date();
+        //     document.write("<h1>" + currentDate + "</h1>");
+        // }
+        // currentDate();
+
+        // Q2
+
+        // function fullName() {
+        //     var firstName = prompt("Enter your First Name");
+        //     var lastName = prompt("Enter your Last Name");
+        //     var fullName = firstName + " " + lastName;
+        //     document.write("Hello, " + fullName);
+        // }
+        // fullName();
+
+        // Q3
+
+        // function sum() {
+        //     var num1 = parseInt(prompt("Enter First No."));
+        //     var num2 = parseInt(prompt("Enter Second No."));
+        //     var sum = num1 + num2;
+        //     document.write("Sum is: " + sum);
+        // }
+        // sum();
+
+        // Q4
+
+        // function calculator() {
+        //     var num1 = parseInt(prompt("Enter First No."));
+        //     var operation = prompt("Enter the Operation (+,-,*,/,%) ");
+        //     var num2 = parseInt(prompt("Enter Second No."));
+
+        //     if (operation === "+") {
+        //         var result = num1 + num2;
+        //         document.write("Sum is: " + result);
+        //     } else if (operation === "-") {
+        //         var result = num1 - num2;
+        //         document.write("Subtraction is: " + result);
+        //     } else if (operation === "*") {
+        //         var result = num1 * num2;
+        //         document.write("Product is: " + result);
+        //     } else if (operation === "/") {
+        //         var result = num1 / num2;
+        //         document.write("Division is: " + result);
+        //     } else if (operation === "%") {
+        //         var result = num1 % num2;
+        //         document.write("Mod is: " + result);
+        //     } else {
+        //         alert("Enter the Valid Operation");
+        //     }
+        // }
+
+        // calculator();
+
+        // Q5
+
+        // function squares(num1) {
+        //     var sqr = num1 ** 2;
+        //     document.write("Square is: " + sqr);
+        // }
+
+        // squares(9);
+
+        // Q6
+
+        // function factorial(num) {
+        //     var answer = 1;
+        //     if (num == 0 || num == 1) {
+        //         return answer;
+        //     } else {
+        //         for (var i = num; i >= 1; i--) {
+        //             answer = answer * i;
+        //         }
+        //         return answer;
+        //     }
+        // }
+        // var num = parseInt(prompt("Enter a Number to find its Factorial!"));
+        // answer = factorial(num);
+        // document.write("<h3>" + "The factorial of " + num + " is " + answer + "</h3>");
+
+        // Q7 pending
+
+        // function counting(start, end) {
+        //     for (var i = 1; i < end.length; i++) {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+        // var start = parseInt(prompt("Start of Counting"));
+        // var end = parseInt(prompt("End of Counting"));
+
+        // var res = counting(start, end);
+
+        // Q8
+
+        // # Function to return the hypotenuse of the 
+        // # right angled triangle  
+        // Hypotenuse^2 = Base^2 + Perpendicular^2
+
+        // function findHypotenuse(side1, side2) {
+        //     var hyp = (((side1 * side1) + (side2 * side2)) ** (1 / 2));
+        //     document.write("Hyp: " + hyp);
+        // }
+        // var side1 = parseInt(prompt("Enter the value of base));
+        // var side2 = parseInt(prompt("Enter the value of perpendicular"));
+        // findHypotenuse(side1, side2);
+
+        // Q9
+        // area of a rectangle.
+
+        // function areaRectangle(w, h) {
+        //     var area = w * h;
+        //     document.write("Area of rectangle is: " + area);
+        // }
+        // areaRectangle(7, 4);
+
+        // Q10
+
+        // function palindrome(str) {
+        //     var re = /[^A-Za-z0-9]/g;
+        //     str = str.toLowerCase().replace(re, '');
+        //     var len = str.length;
+        //     for (var i = 0; i < len / 2; i++) {
+        //         if (str[i] !== str[len - 1 - i]) {
+        //             document.write("The given word is NOT a Palindrome");
+        //             break;
+        //         } else {
+        //             document.write("The given word is a Palindrome");
+        //             break;
+        //         }
+        //     }
+        // }
+        // var str = prompt("Enter a Word to check PALINDROME");
+        // palindrome(str);
+
+        // Q11 Capitalize each word
+
+        // function capitalize_Words(str) {
+        //     return str.replace(/\w\S*/g, function(txt) {
+        //         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        //     });
+        // }
+        // document.write(capitalize_Words('malik danish Ul hassan'));
+
+
+        // Q12 longest word
+
+        // function find_longest_word(str) {
+        //     var array1 = str.match(/\w[a-z]{0,}/gi);
+        //     var result = array1[0];
+
+        //     for (var x = 1; x < array1.length; x++) {
+        //         if (result.length < array1[x].length) {
+        //             result = array1[x];
+        //         }
+        //     }
+        //     return result;
+        // }
+        // document.write(find_longest_word('Karachi Lahore Islamabad'));
+
+        // Q13
+
+        // function char_count(str, letter) {
+        //     var letter_Count = 0;
+        //     for (var position = 0; position < str.length; position++) {
+        //         if (str.charAt(position) == letter) {
+        //             letter_Count += 1;
+        //         }
+        //     }
+        //     return letter_Count;
+        // }
+
+        // document.write(char_count('hello world', 'l'));
+
+        // Q14
+
+        // circumference 
+        function calcCircumference(radius) {
+            var circumference = 2 * 3.142 * radius;
+            document.write("The Circumference is: " + circumference + "<br>");
+        }
+
+        var radius = parseInt(prompt("Enter a radius to find the circumference of a circle"));
+        calcCircumference(radius);
+
+        // area 
+        function calcArea(radius2) {
+            var area = (3.142) * (radius2 ** 2);
+            document.write("The Area is: " + area + "<br>");
+        }
+
+        var radius2 = parseInt(prompt("Enter a radius to find the area of a circle"));
+        calcArea(radius2);
+    </script>
+</body>
+
+</html>
